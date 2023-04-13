@@ -9,7 +9,6 @@ class BooksCollector:
     def add_new_book(self, name):
         if not self.books_rating.get(name):
             self.books_rating[name] = 1
-
     # устанавливаем рейтинг книге (от 1 до 10)
     def set_book_rating(self, name, rating):
         if self.books_rating.get(name) and rating in range(1, 11):
